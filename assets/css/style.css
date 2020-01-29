@@ -6,7 +6,11 @@ font-family: 'Cardo', serif;
 background-color: #fff;
 -webkit-font-smoothing: antialiased;
 }
+
+
 *,
+*:focus,
+*:active,
 *:before,
 *:after {
 
@@ -155,3 +159,64 @@ p {
     background-color: #b82121;
     
 }
+
+
+/*features*/
+
+.features {
+    display: flex;
+    margin: 100px 0;  
+    display: flex;
+    flex-wrap: wrap;
+      
+}
+
+.features__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px; 
+    margin-top: 70px;
+    
+}
+
+.features__icon {
+    margin-bottom: 25px;
+    opacity: 0.70;
+    cursor: pointer;
+    
+    transition: all 0.5s easy-in;
+}
+
+.features__icon:hover {
+    opacity: 1;
+    
+}
+
+
+.features__icon:active {
+        transform: scale(1.5);
+        animation-delay: 1s;
+        transition: all 0.5s ;
+        
+}
+
+    
+
+
+.features__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.features__text {
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+
