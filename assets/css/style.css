@@ -195,9 +195,9 @@ p {
 
 .features__icon:active {
         transform: scale(1.5);
-        animation-delay: 1s;
-        transition: all 0.5s ;
         
+        transition: all 0.5s ;
+
 }
 
     
@@ -216,6 +216,13 @@ p {
     color: #6c7279;
     font-size: 14px;
     line-height: 1.5;
+    
+
+}
+
+.features__text:hover {
+    transition: all 0.5s ;
+    transform: scale(1.5);
 
 }
 
