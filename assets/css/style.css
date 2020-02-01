@@ -149,11 +149,17 @@ p {
     font-family: inherit;
     cursor: pointer;
     transition: background .1s linear;
+    text-align: center;
 }
 
 .btn--red {
     background-color: #e84545;
     text-decoration: none;
+}
+
+.btn--long {
+    min-width: 280px;
+
 }
 
 .btn--red:hover {
@@ -349,6 +355,26 @@ p {
 
 }
 
+.social--footer {
+    justify-content: center;
+    
+}
+
+.social--footer .social__item {
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    
+}
+
+.social--footer .social__icon {
+    fill:  #fff;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
 .social__item {
     width: 40px;
     height: 40px;
@@ -382,6 +408,7 @@ fill: #0e0d0d;
 .reviews {
     background-color: #53354a;
     overflow: hidden;
+    
 }
 
 .reviews__item {
@@ -421,4 +448,89 @@ fill: #0e0d0d;
 .reviews__author {
     color: #fff;
     text-transform: uppercase;
+}
+
+/* download */
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+
+}
+
+.download__title {
+    font-size: 29px;
+    color: #515369;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.download__text {
+    font-size: 13px;
+    color: #515369;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* footer */
+
+.footer {
+    
+    background-color: #3a3e64;
+
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+
+}
+
+.footer__block {
+    width: 33.33333%;
+
+    text-align: center;
+
+}
+
+.footer__title {
+    font-style: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer__address {
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer__text {
+    
+    color: rgba(255, 255, 255, .5);
+    line-height: 1.5;
+    font-size: 14px;
+
+}
+
+.copyright {
+    background-color: #313454;
+     padding: 20px 0;   
+}
+
+.copyright__text {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+
+}
+
+.copyright__text span {
+    color: #fff;
+    
 }
