@@ -7,13 +7,19 @@ background-color: #fff;
 -webkit-font-smoothing: antialiased;
 }
 
+.row-of-icons {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+  }
 
 *,
 *:focus,
 *:active,
 *:before,
 *:after {
-
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -72,6 +78,7 @@ p {
     font-weight: 700;
     
 }
+
 
 
 .nav__link {
@@ -251,7 +258,7 @@ p {
 
 .works__item:hover .works__content {
    opacity: 1;
-
+    
 }
 
 .works__photo {
@@ -505,6 +512,7 @@ fill: #0e0d0d;
     color: rgba(255, 255, 255, .5);
     line-height: 1.5;
     font-size: 14px;
+    
 }
 
 .footer__text {
@@ -512,7 +520,12 @@ fill: #0e0d0d;
     color: rgba(255, 255, 255, .5);
     line-height: 1.5;
     font-size: 14px;
+    
 
+}
+
+element.style {
+    user-select: none;
 }
 
 .copyright {
