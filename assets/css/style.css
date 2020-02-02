@@ -104,6 +104,7 @@ p {
     
     background: #31344e url("../img/intro.jpg") 
     center no-repeat;
+    background-size: cover;
 }
 
 .intro__inner {
@@ -227,11 +228,7 @@ p {
 
 }
 
-.features__text:hover {
-    transition: all 0.5s ;
-    transform: scale(1.2);
 
-}
 
 /*WORKS*/
 
@@ -259,7 +256,7 @@ p {
 
 .works__photo {
     position: absolute;
-    
+    min-width: 100%;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -533,4 +530,190 @@ fill: #0e0d0d;
 .copyright__text span {
     color: #fff;
     
+}
+
+.burger {
+    background: none;
+    display: none;
+    border: 0;
+    cursor: pointer;
+    padding: 9px 2px;
+    outline: none;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    
+    position: relative;
+}
+ 
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    top: -8px;
+}
+
+.burger__item:after {
+    bottom: -8px;
+
+}
+
+
+
+/* media */
+
+@media (max-width: 1300px) {
+     .works__item {
+         width: 50%;
+     }   
+
+}
+
+/* ***************************************************** */
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+    }    
+    
+    .burger {
+        display: block;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .features__item {
+        width: 50%;
+
+    }
+
+    .team__item {
+        width: 50%;
+
+        text-align: center;
+    }
+
+    .team__photo {
+       margin-left: auto; 
+       margin-right: auto;   
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .reviews__photo {
+        width: 100%;
+        margin-top: 15px;
+        overflow: hidden;
+        margin: 15px 0 40px;
+    }
+
+    .reviews__content {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    }
+
+    
+    /* ***************************************************** */
+@media (max-width: 767px) {
+
+    .intro {
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .features {
+        margin: 40px 0;
+    }
+
+    .features__item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .works__item {
+        width: 100%;
+        height: 300px;
+    }   
+    
+    .team__item {
+        width: 100%;
+
+        
+    }
+
+    .team {
+        margin: 60px 0 30px;
+    }
+
+    .reviews__text {
+        font-size: 25px;
+    }
+
+    .btn--long {
+        min-width: 260px;
+
+    }
+
+    .download {
+        margin: 50px 0;
+    }
+
+    .download__title {
+        font-size: 24px;
+    }
+   
+    .footer__inner {
+        padding: 30px 0;
+    }
+
+    .footer__block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 414px) {
+    .reviews__img {
+        right: -100px;
+    }
+
+}
+
+
 }
